@@ -1,0 +1,4 @@
+C:\Users\Administrator\Desktop\MySort\MySort\bin\Debug\MySort.exe
+C:\Users\Administrator\Desktop\MySort\MySort\bin\Debug\MySort.pdb
+C:\Users\Administrator\Desktop\MySort\MySort\obj\x86\Debug\MySort.exe
+C:\Users\Administrator\Desktop\MySort\MySort\obj\x86\Debug\MySort.pdb
