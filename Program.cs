@@ -9,20 +9,28 @@ namespace MySort
     {
         static void Main(string[] args)
         {
-            int temp = 0;
-            int[] arr = {23, 44, 66, 76, 98, 11, 3, 9, 7};
-            for (int i = 0; i < arr.Length - 1; i++)
+
+            int n;
+            Console.WriteLine("请输入数字个数：");
+            n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
+            for (int k = 0; k < n; k++)
             {
-                for (int j = 0; j < arr.Length - 1 - i; j++)
+                Console.WriteLine("请输入第{0}个数字：", k + 1);
+                arr[k] = int.Parse(Console.ReadLine());
+            }
+                for (int i = 0; i < arr.Length - 1; i++)
                 {
-                    if (arr[j] > arr[j + 1])
+                    for (int j = 0; j < arr.Length - 1 - i; j++)
                     {
-                        temp = arr[j + 1];
-                        arr[j + 1] = arr[j];
-                        arr[j] = temp;
+                        if (arr[j] > arr[j + 1])
+                        {
+                            int temp = arr[j + 1];
+                            arr[j + 1] = arr[j];
+                            arr[j] = temp;
+                        }
                     }
                 }
-            }
             Console.WriteLine("排序后的数组：");
             foreach (int item in arr)
             {
